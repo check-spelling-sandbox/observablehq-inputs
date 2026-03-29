@@ -524,7 +524,7 @@ If the *template* object is not specified, the given inputs are wrapped in a DIV
 
 [Source](./src/bind.js) · [Notebook](https://observablehq.com/@observablehq/synchronized-inputs) · The bind function allows a *target* input to be bound to a *source* input, synchronizing the two: interaction with the *source* input will propagate to the *target* input and *vice versa*.
 
-The relationship between *target* and *source* is not symmetric: the *target* input should be considered a dependant of the *source* input, and if desired, only the *source* should be declared an Observable view.
+The relationship between *target* and *source* is not symmetric: the *target* input should be considered a dependent of the *source* input, and if desired, only the *source* should be declared an Observable view.
 
 When the *target* emits a type-appropriate event, the *target*’s type-appropriate value will be applied to the *source* and a type-appropriate event will be dispatched on the *source*; when the *source* emits a type-appropriate event, the *source*’s type-appropriate value will be applied to the *target*, but *no event will be dispatched*, avoiding an infinite loop.
 
